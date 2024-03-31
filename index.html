@@ -1,34 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Social links profile</title>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <style>
+      /* @font-face {
+        font-family: Inter, sans-serif;
+        src: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+      } */
+      html {
+        height: 100%;
+      }
+      body {
+        height: 100%;
+        margin: 0px;
+        background-color: hsl(0, 0%, 8%);
+        font-size: 14px;
+        color: hsl(0, 0%, 100%);
+        font-family: Inter, sans-serif;
+      }
+      main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        background-color: hsl(0, 0%, 12%);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+      }
+      .avatar {
+        border-radius: 50%;
+        max-width: 88px;
+        margin-bottom: 12px;
+      }
+      .name {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+      .location {
+        font-weight: 600;
+        color: hsl(75, 94%, 57%);
+      }
+      .intro {
+        font-weight: 400;
+        margin-bottom: 24px;
+        margin-top: 24px;
+        font-size: 14px;
+      }
+      .button-list {
+        display: flex;
+        flex-direction: column;
+      }
+      .button-item {
+        padding: 14px 96px;
+        border-radius: 8px;
+        background: hsl(0, 0%, 20%);
+        color: white;
+        font-weight: 600;
+        border: none;
+        margin-bottom: 16px;
+      }
+      .button-item:last-child {
+        margin-bottom: 0px;
+      }
+      .button-item:hover {
+        background-color: hsl(75, 94%, 57%);
+        color: hsl(0, 0%, 12%);
+      }
+      .attribution {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <img
+          src="assets/images/avatar-jessica.jpeg"
+          alt="avatar"
+          class="avatar"
+        />
+        <h1 class="name">Jessica Randall</h1>
+        <div class="location">London, United Kingdom</div>
+        <h3 class="intro">"Front-end developer and avid reader."</h3>
+        <div class="button-list">
+          <button class="button-item">GitHub</button>
+          <button class="button-item">Frontend Mentor</button>
+          <button class="button-item">LinkedIn</button>
+          <button class="button-item">Twitter</button>
+          <button class="button-item">Instagram</button>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by Aaqib Qadeer
+      </div>
+    </main>
+  </body>
 </html>
